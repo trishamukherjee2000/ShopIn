@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\bin\Debug\net6.0\ShopInDBFirstDataAccessLayer.deps.json
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\bin\Debug\net6.0\ShopInDBFirstDataAccessLayer.runtimeconfig.json
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\bin\Debug\net6.0\ShopInDBFirstDataAccessLayer.dll
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\bin\Debug\net6.0\ShopInDBFirstDataAccessLayer.pdb
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.AssemblyInfo.cs
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.dll
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\refint\ShopInDBFirstDataAccessLayer.dll
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.pdb
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ShopInDBFirstDataAccessLayer.genruntimeconfig.cache
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\obj\Debug\net6.0\ref\ShopInDBFirstDataAccessLayer.dll
+C:\Users\User\source\repos\ShopIn\ShopInDBFirst\bin\Debug\net6.0\appsettings.json
