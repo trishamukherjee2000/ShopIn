@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ShopInDBFirst",
-    "\\ShopInDBFirst\\Models",
-    "\\ShopInDBServices",
-    "\\ShopInDBServices\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\ShopInDBServices\\Program.cs",
+  "SelectedNode": "\\ShopInDBFirst.sln",
   "PreviewInSolutionExplorer": false
 }

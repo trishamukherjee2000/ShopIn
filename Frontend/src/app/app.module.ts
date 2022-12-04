@@ -18,7 +18,8 @@ import { AdminMainpageComponent } from './admin-mainpage/admin-mainpage.componen
 import { MainserviceService } from './mainservice.service';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminworkComponent } from './adminwork/adminwork.component';
-import {FormsModule,ReactiveFormsModule} from '@angular/forms'
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import { ProductDetailsComponent } from './product-details/product-details.component'
 
 
 
@@ -37,7 +38,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms'
     MyprofileComponent,
     AdminHeaderComponent,
     AdminMainpageComponent,
-    AdminworkComponent
+    AdminworkComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -66,13 +66,13 @@ export class MainserviceService {
       catchError(this.handleError));
   }
 
-  AddUsers(UName:String,UE:String,UP:String,CT:Number,UA:String): Observable<Boolean>{
+  AddUsers(UName:String,UE:String,UP:String,CT:String,UA:String): Observable<Boolean>{
     let user = {
-      userName:UName,
-      userEmail:UE,
-      userPassword:UP,
-      contact:CT,
-      userAddress:UA
+      "UserName":UName,
+      "UserEmail":UE,
+      "UserPassword":UP,
+      "UserContact":CT,
+      "UserAddress":UA
       
     }
     return this.http.post<Boolean>('http://localhost:5223/api/Main/AddUsers',user).pipe(

@@ -132,15 +132,23 @@ namespace ShopInDBServices.Controllers
 
 
         [HttpPost]
-        public JsonResult AddUsers(User users)
+        public JsonResult AddUsers(User ob)
         {
             bool status = false;
             string message;
 
+            User mainob = new User();
+            mainob.UserName = ob.UserName;
+            mainob.UserEmail = ob.UserEmail;
+            mainob.UserContact = ob.UserContact;
+            mainob.UserAddress = ob.UserAddress;
+            mainob.UserPassword = ob.UserPassword;
+
+
             try
             {
-                status = repository.AddUsers(users);
-                
+                status = repository.AddUsers(mainob);
+
             }
             catch (Exception ex)
             {
@@ -175,6 +183,22 @@ namespace ShopInDBServices.Controllers
             catch (Exception)
             {
                 ob = false;
+            }
+            return Json(ob);
+        }
+
+        [HttpGet]
+        public JsonResult GetCatNameByCatId(int CId)
+        {
+            String ob = null;
+            try
+            {
+                ob = repository.GetCatNameByCatId(CId);
+
+            }
+            catch (Exception)
+            {
+                ob = null;
             }
             return Json(ob);
         }

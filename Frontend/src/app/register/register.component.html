@@ -7,7 +7,7 @@
         
         <div class="card my-5">
 
-          <form class="card-body cardbody-color p-lg-5" [formGroup]="RegForm" (ngSubmit)="submit()">
+          <form #register="ngForm" class="card-body cardbody-color p-lg-5" (ngSubmit)="submit(register)">
 
             <div class="text-center">
               <img src="https://cdn-icons-png.flaticon.com/128/7787/7787109.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3"
@@ -20,30 +20,30 @@
             </div>
 
             <div class="mb-3">
-              <input type="text" name="uname" class="form-control" id="Username" aria-describedby="emailHelp" ngModel formControlName="uname"
+              <input type="text" name="uname" class="form-control" id="Username" aria-describedby="emailHelp" ngModel
                 placeholder="User Name">
             </div>
 
             <div class="mb-3">
-                <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" ngModel formControlName="email"
+                <input type="email" name="email"  class="form-control" id="Email" aria-describedby="emailHelp" ngModel
                   placeholder="Email ID">
               </div>
 
             <div class="mb-3">
-              <input type="password" class="form-control" id="password" placeholder="Password" ngModel formControlName="password">
+              <input type="password" name="pwd"  class="form-control" id="password" placeholder="Password" ngModel >
             </div>
             <div class="mb-3">
-                <input type="password" class="form-control" id="password" placeholder="Confirm Password" ngModel formControlName="cpassword">
+                <input type="password" name="cpwd"  class="form-control" id="password" placeholder="Confirm Password" ngModel >
               </div>
               
               <div class="mb-3">
-                <input type="text" class="form-control" id="Phonenumber" aria-describedby="emailHelp" ngModel formControlName="phn"
+                <input type="text" name="phn"  class="form-control" id="Phonenumber" aria-describedby="emailHelp" ngModel 
                   placeholder="Phone Number">
               </div>
 
               <div class="mb-3">
-                <input class="form-control" id="Address" rows="2" cols="15"
-                  placeholder="Address" ngModel formControlName="address">
+                <input class="form-control" id="Address" rows="2" cols="15" name="addrss" 
+                  placeholder="Address" ngModel >
                   
               </div>
 

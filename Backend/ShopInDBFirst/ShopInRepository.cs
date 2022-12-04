@@ -104,7 +104,7 @@ namespace ShopInDBFirstDataAccessLayer
             try
             {
                 products.ProductId = ShopInDbContext.GenerateNewProductId();
-            
+
                 context.Products.Add(products);
                 context.SaveChanges();
                 status = true;
@@ -119,11 +119,21 @@ namespace ShopInDBFirstDataAccessLayer
         public bool AddUsers(User users)
         {
             bool status = false;
+            User find = null;
             try
             {
-                context.Users.Add(users);
-                context.SaveChanges();
-                status = true;
+                find = context.Users.Where(p => p.UserEmail.Equals(users.UserEmail)).FirstOrDefault();
+                if (find != null)
+                {
+                    status = false;
+                }
+                else
+                {
+                    context.Users.Add(users);
+                    context.SaveChanges();
+                    status = true;
+                }
+
             }
             catch (Exception ex)
             {
@@ -135,7 +145,7 @@ namespace ShopInDBFirstDataAccessLayer
         public bool CheckUser(string Email, string Password)
         {
             bool status = false;
-            User ob=null;
+            User ob = null;
             try
             {
                 ob = context.Users.Where(p => p.UserEmail.Equals(Email) && p.UserPassword.Equals(Password)).FirstOrDefault();
@@ -168,5 +178,24 @@ namespace ShopInDBFirstDataAccessLayer
             return status;
         }
 
+
+        public String GetCatNameByCatId(int CId)
+        {
+            Category catObj = null;
+            String catName = "";
+            try
+            {
+                catObj = context.Categories.Where(p => p.CategoryId == CId).FirstOrDefault();
+                if (catObj != null)
+                {
+                    catName = catObj.CategoryName;
+                }
+            }
+            catch (Exception ex)
+            {
+                catObj = null;
+            }
+            return catName;
+        }
     }
 }
